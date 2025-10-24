@@ -3,7 +3,7 @@ import type { CapacitorConfig } from "@capacitor/cli";
 const config: CapacitorConfig = {
   appId: "com.cygnus.app",
   appName: "Cygnus",
-  webDir: "../frontend-web/dist",
+  webDir: "../web/dist",
   bundledWebRuntime: false,
   server: {
     url: process.env.CAP_SERVER_URL ?? process.env.VITE_API_BASE_URL,

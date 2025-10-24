@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "description": "Aplicación Android de Cygnus empaquetada con Capacitor.",
   "scripts": {
-    "build:web": "npm run build:native --prefix ../frontend-web",
+    "build:web": "npm run build:native --prefix ../web",
     "cap:add": "node ./node_modules/@capacitor/cli/bin/capacitor add android",
     "sync": "node ./node_modules/@capacitor/cli/bin/capacitor sync android",
     "build": "npm run build:web && npm run sync",

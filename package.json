@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "description": "Aplicación Android de Cygnus empaquetada con Capacitor.",
+  "author": "Nicolás Panaino",
   "scripts": {
     "build:web": "npm run build:native --prefix ../web",
     "cap:add": "node ./node_modules/@capacitor/cli/bin/capacitor add android",

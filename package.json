@@ -9,7 +9,9 @@
     "sync": "node ./node_modules/@capacitor/cli/bin/capacitor sync android",
     "build": "npm run build:web && npm run sync",
     "open": "node ./node_modules/@capacitor/cli/bin/capacitor open android",
-    "doctor": "node ./node_modules/@capacitor/cli/bin/capacitor doctor android"
+    "doctor": "node ./node_modules/@capacitor/cli/bin/capacitor doctor android",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "npm run lint -- --fix"
   },
   "dependencies": {
     "@capacitor/android": "^6.2.0",
@@ -17,6 +19,11 @@
   },
   "devDependencies": {
     "@capacitor/cli": "^6.2.0",
+    "@types/node": "^20.16.10",
+    "@eslint/js": "^9.13.0",
+    "eslint": "^9.12.0",
+    "globals": "^15.11.0",
+    "typescript-eslint": "^8.9.0",
     "typescript": "^5.6.3"
   }
 }

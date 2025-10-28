@@ -4,10 +4,12 @@ const config: CapacitorConfig = {
   appId: "com.cygnus.app",
   appName: "Cygnus",
   webDir: "../web/dist",
-  bundledWebRuntime: false,
   server: {
     url: process.env.CAP_SERVER_URL ?? process.env.VITE_API_BASE_URL,
     cleartext: true,
+  },
+  android: {
+    path: ".",
   },
 };
 
